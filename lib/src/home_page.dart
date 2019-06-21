@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     print("reconstruindo");
 
-    ValueBloc valueBloc = BlocProvider.getBloc<ValueBloc>();
+    final valueBloc = BlocProvider.getBloc<ValueBloc>();
 
     return Material(
       color: Color.lerp(Colors.red, Colors.purple, valueBloc.value),
